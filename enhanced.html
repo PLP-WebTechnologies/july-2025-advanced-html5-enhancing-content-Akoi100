@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample webpage demonstrating a well-structured HTML5 form with various input fields and attributes.">
+    <title>Enhanced HTML5 Form</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enhanced HTML5 Form</h1>
+    </header>
+
+    <main>
+        <section aria-labelledby="content-section">
+            <h2 id="content-section">Structured Content</h2>
+
+            <!-- List Example -->
+            <h3>Favorite Fruits</h3>
+            <ul>
+                <li>Apples</li>
+                <li>Bananas</li>
+                <li>Cherries</li>
+            </ul>
+
+            <!-- Table Example -->
+            <h3>Sample Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Occupation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>D'vock Akoi</td>
+                        <td>24</td>
+                        <td>Software Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Anyango</td>
+                        <td>28</td>
+                        <td>Data Scientist</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Media Example -->
+            <h3>Sample Image</h3>
+            <img src="laptop.png" alt="Placeholder Image">
+        </section>
+
+        <section aria-labelledby="form-section">
+            <h2 id="form-section">Complete HTML5 Form</h2>
+            <form action="#" method="post">
+                <!-- Text Input -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+
+                <!-- Email Input -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+
+
+                <!-- Password Input -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+
+                <!-- Number Input -->
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="99">
+
+
+                <!-- Date Input -->
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate">
+
+
+                <!-- Readonly Input -->
+                <label for="readonly-field">Readonly Field:</label>
+                <input type="text" id="readonly-field" name="readonly-field" value="This field is readonly" readonly>
+
+
+                <!-- Dropdown -->
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select your country</option>
+                    <option value="us">Kenya</option>
+                    <option value="ca">United States</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+
+                <!-- Radio Buttons -->
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </fieldset>
+
+                <!-- Checkbox -->
+                <input type="checkbox" id="subscribe" name="subscribe" checked>
+                <label for="subscribe">Subscribe to newsletter</label>
+
+                <!-- Textarea -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Enhanced Form Example. All rights reserved.</p>
+    </footer>
+</body>
+</html>
